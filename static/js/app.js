@@ -76,7 +76,7 @@ function updateFilters() {
     };
     let shape = d3.select("#shape").property("shape");
     if (country) {
-      filteredData = filteredData.filter(row => row.datetime === country);
+      filteredData = filteredData.filter(row => row.shape === shape);
     };
   
     // 10. Finally, rebuild the table using the filtered data
