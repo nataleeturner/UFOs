@@ -70,12 +70,12 @@ function updateFilters() {
     if (state) {
       filteredData = filteredData.filter(row => row.state === state);
     };
-    let country = d3.select("#country").property("country");
+    let country = d3.select("#country").property("value");
     if (country) {
       filteredData = filteredData.filter(row => row.country === country);
     };
-    let shape = d3.select("#shape").property("shape");
-    if (country) {
+    let shape = d3.select("#shape").property("value");
+    if (shape) {
       filteredData = filteredData.filter(row => row.shape === shape);
     };
   
